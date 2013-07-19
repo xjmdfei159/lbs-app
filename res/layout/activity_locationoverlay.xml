@@ -1,46 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    <baidumapsdk.demo.MyLocationMapView android:id="@+id/bmapView"
-	    android:layout_width="fill_parent" android:layout_height="fill_parent" 
-	    android:clickable="true"     
-	/>
 
-     <Button
-         android:id="@+id/button1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentRight="true"
-         android:layout_alignParentTop="true"
-         android:layout_marginRight="25dp"
-         android:layout_marginTop="10dip"
-         android:background="@drawable/custom_loc"  />
+    <baidumapsdk.demo.MyLocationMapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
 
-     <Button
-         android:id="@+id/managerButton"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentBottom="true"
-         android:layout_centerHorizontal="true"
-         android:text="管理" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/custom_loc" />
 
-     <Button
-         android:id="@+id/publishButton"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentLeft="true"
-         android:layout_marginLeft="30dp"
-         android:text="发布" />
 
-     <Button
-         android:id="@+id/searchButton"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentBottom="true"
-         android:layout_alignRight="@+id/button1"
-         android:text="寻人" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="20dp"
+        android:text="search" />
+
+    <Button
+        android:id="@+id/managerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/button2"
+        android:text="manager" />
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignRight="@+id/button1"
+        android:layout_marginRight="20dp"
+        android:text="publish" />
 
 </RelativeLayout>
