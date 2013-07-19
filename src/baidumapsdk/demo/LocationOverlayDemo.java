@@ -128,20 +128,38 @@ public class LocationOverlayDemo extends Activity {
 		mMapView.refresh();
         //界面加载的时候添加图层 作用是添加新的点 
         addCustomElementsDemo();
-        
+        //三个按钮
 		Button managebutton = (Button) findViewById(R.id.managerButton);
-		managebutton.setOnClickListener(new View.OnClickListener() {
-			
+		managebutton.setOnClickListener(new View.OnClickListener() {			
 			@Override
-			public void onClick(View arg0) {
-				
+			public void onClick(View arg0) {				
 					// TODO Auto-generated method stub
 					Intent intent2 = new Intent();
 					intent2.setClass(LocationOverlayDemo.this, manager.class);
 					startActivity(intent2);
-				
-			
-				
+		
+			}
+		});
+		Button searchbutton = (Button) findViewById(R.id.searchButton);
+		searchbutton.setOnClickListener(new View.OnClickListener() {			
+			@Override
+			public void onClick(View arg0) {				
+					// TODO Auto-generated method stub
+					Intent intent2 = new Intent();
+					intent2.setClass(LocationOverlayDemo.this, search.class);
+					startActivity(intent2);
+		
+			}
+		});
+		Button publishbutton = (Button) findViewById(R.id.publishButton);
+		publishbutton.setOnClickListener(new View.OnClickListener() {			
+			@Override
+			public void onClick(View arg0) {				
+					// TODO Auto-generated method stub
+					Intent intent2 = new Intent();
+					intent2.setClass(LocationOverlayDemo.this, publish.class);
+					startActivity(intent2);
+		
 			}
 		});
 		

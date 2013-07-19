@@ -38,6 +38,21 @@
             android:label="@string/demo_name_location"
             android:screenOrientation="sensor" >
         </activity>
+        
+        <activity
+            android:name="baidumapsdk.demo.publish"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_location"
+            android:screenOrientation="sensor" >
+        </activity>
+        
+        
+        <activity
+            android:name="baidumapsdk.demo.search"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_location"
+            android:screenOrientation="sensor" >
+        </activity>
 
         
         <service
